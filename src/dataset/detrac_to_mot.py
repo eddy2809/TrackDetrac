@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Example usage:
-    python detrac2mot.py val     
-    python detrac2mot.py test
-    python detrac2mot.py both
+    python detrac_to_mot.py val     
+    python detrac_to_mot.py test
+    python detrac_to_mot.py both
 
     Specify --val-ratio to be the same as the one used in detection. 
     Default for both is 0.2 (80% train 20% val)
