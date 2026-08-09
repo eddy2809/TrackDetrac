@@ -3,3 +3,7 @@
 /.vscode
 /notebooks/runs
 /notebooks/*.pt
+TrackEval-master/
+logs/
+checkpoints/
+/experiments
