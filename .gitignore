@@ -7,3 +7,6 @@ TrackEval-master/
 logs/
 checkpoints/
 /experiments
+/TrackEval-master
+*.pt
+/src/dataset/__pycache__
