@@ -1,3 +1,8 @@
 /data
 .DS_Store
 /.vscode
+/notebooks/runs
+/TrackEval-master
+*.pt
+/experiments
+/src/dataset/__pycache__
