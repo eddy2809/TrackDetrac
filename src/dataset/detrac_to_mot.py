@@ -16,7 +16,7 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from detrac_to_yolo import (
+from src.dataset.detrac_to_yolo import (
     ANNOTATIONS_DIR,
     DATA_ROOT,
     IMAGES_DIR,

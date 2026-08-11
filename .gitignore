@@ -9,4 +9,6 @@ checkpoints/
 /experiments
 /TrackEval-master
 *.pt
-/src/dataset/__pycache__
+/experiments
+__pycache__
+
