@@ -1,0 +1,9 @@
+{
+    "split": "val",
+    "weights": "./experiments/bytetrack/exp003_10SR/weights/best.pt",
+    "tracker_name": "bytetrack",
+    "tracker_config_path": "./experiments/bytetrack/exp003_10SR/eval/bytetrack.yaml",
+    "conf": 0.05,
+    "end2end": false,
+    "pred_name": "bytetrack_001" 
+}
