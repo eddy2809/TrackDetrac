@@ -4,11 +4,10 @@
 /notebooks/runs
 /notebooks/*.pt
 TrackEval-master/
-logs/
 checkpoints/
-/experiments
 /TrackEval-master
 *.pt
-/experiments
 pycache
 PuTR-main
+/src/dataset/__pycache__
+/experiments
