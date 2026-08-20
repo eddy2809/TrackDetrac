@@ -10,5 +10,5 @@ checkpoints/
 /TrackEval-master
 *.pt
 /experiments
-__pycache__
-
+pycache
+PuTR-main
