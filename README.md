@@ -29,7 +29,8 @@ flowchart TD
     A[UA-DETRAC Dataset] --> A1[Pre-processing]
     A1 --> B[Object Detection<br/>YOLO26 fine-tuning]
     B --> B1[Model Selection<br/>YOLO]
-    B1 --> C[Tracking - Association]
+    B1 --> B2[Detection Dump]
+    B2 --> C[Tracking - Association]
     C --> C1[ByteTrack<br/>Kalman + IoU]
     C --> C2[PuTR<br/>Transformer]
     C1 --> D1[Model Selection<br/>ByteTrack]
@@ -42,9 +43,9 @@ For a detailed description of every step refer to [project report](docs/report.p
 ## Technical Reproducibility
 ### Data Setup
 [UA-DETRAC](https://detrac-db.rit.albany.edu/) [3] is a collection of 100 sequences captured from fixed overhead cameras on footbridges in Beijing and Tianjin, with over 140,000 frames at 25 fps, 960x540 resolution, roughly 1.21M annotated boxes over 8,250 distinct vehicles. You can download data on [Kaggle](https://www.kaggle.com/datasets/bratjay/ua-detrac-orig). 
-Preprocessing is required to use DETRAC with YOLO, ByteTrack, PuTR and TrackEval. Three conversation scripts are used for this goal: ```detrac_to_yolo.py```, which also performs training/val split and sampling, ```detrac_to_putr.py``` and ```detrac_to_mot.py``` for TrackEval evaluation.
+Preprocessing is required to use DETRAC with YOLO, ByteTrack, PuTR and TrackEval. Three conversion scripts are used for this goal: ```detrac_to_yolo.py```, which also performs training/val split and sampling, ```detrac_to_putr.py``` and ```detrac_to_mot.py``` for TrackEval evaluation. ByteTrack 
 ### Training and evaluation
-Training of YOLO detector is performed inside notebook ``` training_template.ipynb```, instead, evaluation of bytetrack is perfomed by the script ```tracking_inference.py ```. All PuTR operations (training and evaluation) and the TrackEval evaluations are perfomed by the scripts of the  [related repositories](#tech-stack). Config files for model selection are available in ```experiments/configs```.
+Training of YOLO detector is performed inside notebook ```training_template.ipynb```, instead, evaluation of bytetrack is perfomed by the script ```tracking_inference.py ```. All PuTR operations (training and evaluation) and the TrackEval evaluations are perfomed by the scripts of the  [related repositories](#tech-stack). Config files for model selection are available in ```experiments/configs```.
 
 
 ## Results
